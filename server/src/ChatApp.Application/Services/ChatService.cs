@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.WebSockets;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -36,6 +37,11 @@ namespace ChatApp.Application.Services
                 }
             }
         }
+        /// <summary>
+        /// Рассылаем сообщение всем подключенным пользователям.
+        /// </summary>
+        /// <param name="message"></param>
+        /// <returns></returns>
         private async Task BroadcastMessageAsync(string message)
         {
             var buffer = Encoding.UTF8.GetBytes(message);
@@ -48,7 +54,7 @@ namespace ChatApp.Application.Services
                     await client.SendAsync(segment, WebSocketMessageType.Text, true, CancellationToken.None);
                 }
             }
-
         }
+
     }
 }

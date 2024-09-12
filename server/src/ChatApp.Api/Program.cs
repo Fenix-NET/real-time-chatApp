@@ -24,6 +24,7 @@ namespace ChatApp.Api
 
             builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
             builder.Services.AddScoped<IChatService, ChatService>();
+            builder.Services.AddScoped<ITokenService, TokenService>();
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();

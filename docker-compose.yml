@@ -16,7 +16,7 @@ services:
     image: postgres
     container_name: chatappdb
     environment:
-      - POSTGRES_DB=ChatAppdbDb
+      - POSTGRES_DB=ChatAppDb
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=959595
     ports:
