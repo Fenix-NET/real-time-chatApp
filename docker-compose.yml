@@ -1,0 +1,34 @@
+services:
+  chatapp.api:
+    image: ${DOCKER_REGISTRY-}chatappapi
+    build:
+      context: .
+      dockerfile: server/src/ChatApp.Api/Dockerfile
+    ports:
+      - 5154:8080
+      - 5155:8081
+    depends_on:
+      - chatappdb
+    networks:
+      - chatapp-network
+  
+  chatappdb:
+    image: postgres
+    container_name: chatappdb
+    environment:
+      - POSTGRES_DB=ChatAppdbDb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=959595
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - chatapp-network
+
+volumes:
+  pgdata:
+
+networks:
+  chatapp-network:
+    driver: bridge

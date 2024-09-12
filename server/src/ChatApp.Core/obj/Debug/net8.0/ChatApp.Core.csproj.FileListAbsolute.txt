@@ -1,0 +1,13 @@
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Core\bin\Debug\net8.0\ChatApp.Core.deps.json
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Core\bin\Debug\net8.0\ChatApp.Core.dll
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Core\bin\Debug\net8.0\ChatApp.Core.pdb
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Core\obj\Debug\net8.0\ChatApp.Core.csproj.AssemblyReference.cache
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Core\obj\Debug\net8.0\ChatApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Core\obj\Debug\net8.0\ChatApp.Core.AssemblyInfoInputs.cache
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Core\obj\Debug\net8.0\ChatApp.Core.AssemblyInfo.cs
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Core\obj\Debug\net8.0\ChatApp.Core.csproj.CoreCompileInputs.cache
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Core\obj\Debug\net8.0\ChatApp.Core.sourcelink.json
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Core\obj\Debug\net8.0\ChatApp.Core.dll
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Core\obj\Debug\net8.0\refint\ChatApp.Core.dll
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Core\obj\Debug\net8.0\ChatApp.Core.pdb
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Core\obj\Debug\net8.0\ref\ChatApp.Core.dll

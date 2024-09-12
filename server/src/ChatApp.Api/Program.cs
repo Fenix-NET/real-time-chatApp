@@ -1,4 +1,11 @@
 
+using ChatApp.Api.Extensions;
+using ChatApp.Application.Services;
+using ChatApp.Core.Interfaces;
+using ChatApp.Infrastructure.Identity;
+using ChatApp.Infrastructure.Persistance;
+using Microsoft.EntityFrameworkCore;
+
 namespace ChatApp.Api
 {
     public class Program
@@ -7,16 +14,23 @@ namespace ChatApp.Api
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            builder.Services.ConfigurationCors();
+            builder.Services.ConfigurationIdentity();
+            builder.Services.ConfigurationAuth(builder.Configuration);
+
+            builder.Services.AddAuthorization();
+
+            builder.Services.ConfigureDb(builder.Configuration);
+
+            builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+            builder.Services.AddScoped<IChatService, ChatService>();
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -25,8 +39,10 @@ namespace ChatApp.Api
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
+            app.UseWebSockets();
 
             app.MapControllers();
 

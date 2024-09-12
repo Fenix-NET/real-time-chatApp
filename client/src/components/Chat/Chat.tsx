@@ -7,7 +7,7 @@ class Chat extends Component<IChatProps, IChatState> {
     private ws: WebSocket | null = null;
 
     /**
-     *
+     * В конструкторе делаем инициализацию состояния компонента, так же задаем начальные значения для состояния.
      */
     constructor(props: IChatProps) {
         super(props);
@@ -18,13 +18,17 @@ class Chat extends Component<IChatProps, IChatState> {
         };
     };
 
+    /*
+    * Функции componentDidMount и componentWillUnmount управляют поведением компонента на разных этапах его существования: встраивание в DOM, и удаления из DOM.
+    */
+   // Вызывается сразу после встривания компонента в ДОМ.
     componentDidMount(): void {
-        this.ws =new WebSocket('ws://localhost:5120/api/chat');
+        this.ws = new WebSocket('ws://localhost:5120/api/chat'); // Создаем объект ВебСокет и подключаемся к серверну.
 
         this.ws.onopen = () => {
             console.log('Connected to WebSockets server')
         };
-
+        // Добавляем принятые сообщения в состояние компонента.
         this.ws.onmessage = (event: MessageEvent) => {
             this.setState((prevState) => ({
                 messages: [...prevState.messages, event.data]
@@ -36,15 +40,18 @@ class Chat extends Component<IChatProps, IChatState> {
         };
     };
 
+    // Вызывается перед удалением компонента из ДОМ.
     componentWillUnmount(): void {
         this.ws?.close();
     };
-
+    // Обработчик дл события ввода. Срабатывает при каждом изменении значения в поле для ввода. Используем для обновления состояния, после каждого ввода символа.
     handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
         this.setState({ input: event.target.value});
     };
 
+    // Метод для отправки сообщения серверу, через ВебСокет соединение.
     sendMessage = () => {
+        console.log('start senMessage function');
         const { input } = this.state;
         if(this.ws && input.trim()){
             this.ws.send(input);
@@ -52,6 +59,7 @@ class Chat extends Component<IChatProps, IChatState> {
         }
     };
 
+    // Обработчик для события нажатия клавиш в поле ввода. При нажатии Enter - отправляем сообщение серверу.
     handleKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
         if(event.key === 'Enter') {
             this.sendMessage();

@@ -1,0 +1,71 @@
+name: dockercompose15872907988067067648
+services:
+  chatapp.api:
+    build:
+      context: C:\SENLA\StudentRepository\real-time-chat\real-time-chat
+      dockerfile: server/src/ChatApp.Api/Dockerfile
+    depends_on:
+      chatappdb:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: chatappapi
+    networks:
+      chatapp-network: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "5154"
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        published: "5155"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\user\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\user\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  chatappdb:
+    container_name: chatappdb
+    environment:
+      POSTGRES_DB: ChatAppdbDb
+      POSTGRES_PASSWORD: "959595"
+      POSTGRES_USER: postgres
+    image: postgres
+    networks:
+      chatapp-network: null
+    ports:
+      - mode: ingress
+        target: 5432
+        published: "5432"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: pgdata
+        target: /var/lib/postgresql/data
+        volume: {}
+networks:
+  chatapp-network:
+    name: dockercompose15872907988067067648_chatapp-network
+    driver: bridge
+volumes:
+  pgdata:
+    name: dockercompose15872907988067067648_pgdata

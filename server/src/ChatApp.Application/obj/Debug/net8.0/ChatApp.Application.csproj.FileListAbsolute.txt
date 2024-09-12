@@ -1,0 +1,16 @@
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Application\bin\Debug\net8.0\ChatApp.Application.deps.json
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Application\bin\Debug\net8.0\ChatApp.Application.dll
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Application\bin\Debug\net8.0\ChatApp.Application.pdb
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Application\bin\Debug\net8.0\ChatApp.Core.dll
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Application\bin\Debug\net8.0\ChatApp.Core.pdb
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Application\obj\Debug\net8.0\ChatApp.Application.csproj.AssemblyReference.cache
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Application\obj\Debug\net8.0\ChatApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Application\obj\Debug\net8.0\ChatApp.Application.AssemblyInfoInputs.cache
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Application\obj\Debug\net8.0\ChatApp.Application.AssemblyInfo.cs
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Application\obj\Debug\net8.0\ChatApp.Application.csproj.CoreCompileInputs.cache
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Application\obj\Debug\net8.0\ChatApp.Application.sourcelink.json
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Application\obj\Debug\net8.0\ChatApp..DE1B6355.Up2Date
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Application\obj\Debug\net8.0\ChatApp.Application.dll
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Application\obj\Debug\net8.0\refint\ChatApp.Application.dll
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Application\obj\Debug\net8.0\ChatApp.Application.pdb
+C:\SENLA\StudentRepository\real-time-chat\real-time-chat\server\src\ChatApp.Application\obj\Debug\net8.0\ref\ChatApp.Application.dll

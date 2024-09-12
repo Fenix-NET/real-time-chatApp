@@ -9,13 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BD874D26-24A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EFAB40C4-8A49-4A2D-8C23-004F224BA699}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatApp.Api", "server\src\ChatApp.Api\ChatApp.Api.csproj", "{8759E956-337D-48E7-AEC0-C8CE49682BC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatApp.Api", "server\src\ChatApp.Api\ChatApp.Api.csproj", "{8759E956-337D-48E7-AEC0-C8CE49682BC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatApp.Application", "server\src\ChatApp.Application\ChatApp.Application.csproj", "{A71CF027-E0CB-41E7-B726-9D6DFFC3DB22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatApp.Application", "server\src\ChatApp.Application\ChatApp.Application.csproj", "{A71CF027-E0CB-41E7-B726-9D6DFFC3DB22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatApp.Core", "server\src\ChatApp.Core\ChatApp.Core.csproj", "{CCE039E4-AA11-44A3-981F-576423FAD42D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatApp.Core", "server\src\ChatApp.Core\ChatApp.Core.csproj", "{CCE039E4-AA11-44A3-981F-576423FAD42D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatApp.Infrastructure", "server\src\ChatApp.Infrastructure\ChatApp.Infrastructure.csproj", "{65B05E91-2184-4F29-9F89-87B221C29BD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatApp.Infrastructure", "server\src\ChatApp.Infrastructure\ChatApp.Infrastructure.csproj", "{65B05E91-2184-4F29-9F89-87B221C29BD7}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{84733C58-2E33-4267-A77F-8F9684B3E7F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{65B05E91-2184-4F29-9F89-87B221C29BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65B05E91-2184-4F29-9F89-87B221C29BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65B05E91-2184-4F29-9F89-87B221C29BD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84733C58-2E33-4267-A77F-8F9684B3E7F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84733C58-2E33-4267-A77F-8F9684B3E7F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84733C58-2E33-4267-A77F-8F9684B3E7F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84733C58-2E33-4267-A77F-8F9684B3E7F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
