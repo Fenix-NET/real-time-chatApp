@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zbbwcH86j/M=",
+  "dgSpecHash": "ntVdCrqZNITS1IziUkxQEIfdLtVCdKBkmJia7I5HRN3QgyklBJWlsdm9N6zMp2exO074TtDweTgEe/S11FRtRg==",
   "success": true,
-  "projectFilePath": "C:\\SENLA\\StudentRepository\\real-time-chat\\real-time-chat\\server\\src\\ChatApp.Api\\ChatApp.Api.csproj",
+  "projectFilePath": "D:\\Programming\\PROJECTS\\real-time-chatApp\\server\\src\\ChatApp.Api\\ChatApp.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.8\\microsoft.aspnetcore.authentication.jwtbearer.8.0.8.nupkg.sha512",

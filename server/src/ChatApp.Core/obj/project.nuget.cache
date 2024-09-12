@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oyhNvakqbSU=",
+  "dgSpecHash": "HKqOOAcn8xaENJTSWcOKG7bFseiG9vBtsfaXmxbEmBa9hYJHkHeucxeOV1fX48LpO6CsYGO3QZVF52B8qqxlig==",
   "success": true,
-  "projectFilePath": "C:\\SENLA\\StudentRepository\\real-time-chat\\real-time-chat\\server\\src\\ChatApp.Core\\ChatApp.Core.csproj",
+  "projectFilePath": "D:\\Programming\\PROJECTS\\real-time-chatApp\\server\\src\\ChatApp.Core\\ChatApp.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.8\\microsoft.aspnetcore.cryptography.internal.8.0.8.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.8\\microsoft.aspnetcore.cryptography.keyderivation.8.0.8.nupkg.sha512",

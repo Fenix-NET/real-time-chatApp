@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8LI7hZeyVt8=",
+  "dgSpecHash": "CsxtCsZXnkengUo6qyLhEDZomH07QbWrFlqSwWqJH3O0+gMjS+kcWfeTDeRbG3YL0XOklrv3zvcvfXKTZdBv4w==",
   "success": true,
-  "projectFilePath": "C:\\SENLA\\StudentRepository\\real-time-chat\\real-time-chat\\server\\src\\ChatApp.Infrastructure\\ChatApp.Infrastructure.csproj",
+  "projectFilePath": "D:\\Programming\\PROJECTS\\real-time-chatApp\\server\\src\\ChatApp.Infrastructure\\ChatApp.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.8\\microsoft.aspnetcore.cryptography.internal.8.0.8.nupkg.sha512",
