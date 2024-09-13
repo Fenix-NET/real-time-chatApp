@@ -3,8 +3,12 @@
     "Docker Compose": {
       "commandName": "DockerCompose",
       "commandVersion": "1.0",
+      "composeLaunchAction": "LaunchBrowser",
+      "composeLaunchServiceName": "chatappapi",
+      "composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/swagger",
       "serviceActions": {
-        "chatapp.api": "StartDebugging"
+        "chatappapi": "StartDebugging",
+        "chatappdb": "StartWithoutDebugging"
       }
     }
   }

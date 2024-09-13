@@ -9,7 +9,7 @@ namespace ChatApp.Core.Entities
 {
     public class AppRole : IdentityRole<Guid>
     {
-        public override Guid Id { get ; set ; } = Guid.NewGuid();
+        public override Guid Id { get; set; } = Guid.NewGuid();
 
         public AppRole()
         {

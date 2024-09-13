@@ -2,13 +2,6 @@
 using ChatApp.Infrastructure.Persistance.Configurations;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ChatApp.Infrastructure.Persistance
 {
@@ -28,5 +21,6 @@ namespace ChatApp.Infrastructure.Persistance
             builder.ApplyConfiguration(new AppRoleConfiguration());
         }
         public DbSet<ChatMessage> chatMessages { get; set; }
+        public DbSet<DirectMessage> directMessages { get; set; }
     }
 }
