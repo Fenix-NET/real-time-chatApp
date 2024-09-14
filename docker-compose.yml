@@ -1,3 +1,4 @@
+
 services:
   chatappapi:
     container_name: chatappapi
@@ -5,11 +6,14 @@ services:
       context: .
       dockerfile: server/src/ChatApp.Api/Dockerfile
     ports:
-      - 5154:80
+      - 5156:8080
+      - 5157:8081
     environment:
-      - ConnectionStrings__PostgreSQL=Host=chatappdb;Database=ChatAppDb;Port=5432;Username=postgres;Password=postgres
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__ChatAppDatabase=Host=chatappdb;Database=ChatAppDb;Port=5432;Username=postgres;Password=postgres
     depends_on:
-      - chatappdb
+      chatappdb:
+        condition: service_healthy
     networks:
       - chatapp-network
   
@@ -27,6 +31,11 @@ services:
       - pgdata:/var/lib/postgresql/data
     networks:
       - chatapp-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
 volumes:
   pgdata:

@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace ChatApp.Core.DataTransferObjects
 {
-    public record UserRegisterDto(string UserName, string Password);
+    public record UserRegisterDto(string UserName, string Email, string Password);
 }

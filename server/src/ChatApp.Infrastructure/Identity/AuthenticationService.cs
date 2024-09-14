@@ -48,6 +48,7 @@ namespace ChatApp.Infrastructure.Identity
             var user = new AppUser
             {
                 UserName = request.UserName,
+                Email = request.Email,
             };
             var result = await _userManager.CreateAsync(user, request.Password);
 

@@ -1,5 +1,4 @@
 ﻿using ChatApp.Core.Interfaces;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ChatApp.Api.Controllers

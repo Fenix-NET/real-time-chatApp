@@ -5,6 +5,7 @@ using ChatApp.Core.Interfaces;
 using ChatApp.Infrastructure.Identity;
 using ChatApp.Infrastructure.Persistance;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace ChatApp.Api
 {
@@ -32,13 +33,19 @@ namespace ChatApp.Api
 
             var app = builder.Build();
 
+            //using (var scope = app.Services.CreateScope())
+            //{
+            //    var dbContext = scope.ServiceProvider.GetRequiredService<ChatAppDbContext>();
+            //    if (dbContext != null) dbContext.Database.Migrate();
+            //}
+
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseAuthentication();
             app.UseAuthorization();

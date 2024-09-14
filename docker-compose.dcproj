@@ -7,7 +7,7 @@
     <ProjectGuid>84733c58-2e33-4267-a77f-8f9684b3e7f2</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
-    <DockerServiceName>chatapp.api</DockerServiceName>
+    <DockerServiceName>chatappapi</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">
